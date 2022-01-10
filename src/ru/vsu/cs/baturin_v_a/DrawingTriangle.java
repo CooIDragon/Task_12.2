@@ -6,7 +6,7 @@ public class DrawingTriangle {
 
         depthOfRecursion--;
 
-        if (depthOfRecursion == 1){
+        if(depthOfRecursion == 1){
             return newArray;
         } else {
             return drawTriangle(newArray, depthOfRecursion);
@@ -19,21 +19,21 @@ public class DrawingTriangle {
         int r = 0;
         int c = 0;
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array[0].length / 2; j++) {
+        for(int i = 0; i < array.length; i++) {
+            for(int j = 0; j < array[0].length / 2; j++) {
                 newArray[i][j] = " ";
             }
         }
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = array[0].length / 2; j < array[0].length + array[0].length / 2; j++) {
-                if (newArray[i][j] == null) {
+        for(int i = 0; i < array.length; i++) {
+            for(int j = array[0].length / 2; j < array[0].length + array[0].length / 2; j++) {
+                if(newArray[i][j] == null) {
                     newArray[i][j] = array[r][c];
                     c++;
-                    if (c == array[0].length) {
+                    if(c == array[0].length) {
                         c = 0;
                         r++;
-                        if (r == array.length) {
+                        if(r == array.length) {
                             r = 0;
                             break;
                         }
@@ -42,21 +42,21 @@ public class DrawingTriangle {
             }
         }
 
-        for (int i = 0; i < array.length; i++) {
-            for (int j = array[0].length + array[0].length / 2; j < array[0].length + array[0].length / 2 * 2; j++) {
+        for(int i = 0; i < array.length; i++) {
+            for(int j = array[0].length + array[0].length / 2; j < array[0].length + array[0].length / 2 * 2; j++) {
                 newArray[i][j] = " ";
             }
         }
 
-        for (int i = array.length; i < array.length * 2; i++) {
-            for (int j = 0; j < array[0].length; j++) {
-                if (newArray[i][j] == null) {
+        for(int i = array.length; i < array.length * 2; i++) {
+            for(int j = 0; j < array[0].length; j++) {
+                if(newArray[i][j] == null) {
                     newArray[i][j] = array[r][c];
                     c++;
-                    if (c == array[0].length) {
+                    if(c == array[0].length) {
                         c = 0;
                         r++;
-                        if (r == array.length) {
+                        if(r == array.length) {
                             r = 0;
                             break;
                         }
@@ -66,15 +66,15 @@ public class DrawingTriangle {
 
         }
 
-        for (int i = array.length; i < array.length * 2; i++) {
-            for (int j = array[0].length; j < array[0].length * 2; j++) {
-                if (newArray[i][j] == null) {
+        for(int i = array.length; i < array.length * 2; i++) {
+            for(int j = array[0].length; j < array[0].length * 2; j++) {
+                if(newArray[i][j] == null) {
                     newArray[i][j] = array[r][c];
                     c++;
-                    if (c == array[0].length) {
+                    if(c == array[0].length) {
                         c = 0;
                         r++;
-                        if (r == array.length) {
+                        if(r == array.length) {
                             r = 0;
                             break;
                         }
