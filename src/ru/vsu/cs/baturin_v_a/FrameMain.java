@@ -28,10 +28,10 @@ public class FrameMain extends JFrame {
                 DrawingTriangle drawingTriangle = new DrawingTriangle();
 
                 int n = (int) spinnerDepthOfRecursion.getValue();
-                if (n == 1) {
+                if(n == 1) {
                     String[][] array1 = drawingTriangle.drawFirstTriangle();
-                    for (int i = 0; i < array1.length; i++) {
-                        for (int j = 0; j < array1[0].length; j++) {
+                    for(int i = 0; i < array1.length; i++) {
+                        for(int j = 0; j < array1[0].length; j++) {
                             textArea.append(array1[i][j]);
                         }
                         textArea.append("\n");
@@ -39,8 +39,8 @@ public class FrameMain extends JFrame {
                     }
                 } else {
                     String[][] array = drawingTriangle.drawTriangle(drawingTriangle.drawFirstTriangle(), n);
-                    for (int i = 0; i < array.length; i++) {
-                        for (int j = 0; j < array[0].length; j++) {
+                    for(int i = 0; i < array.length; i++) {
+                        for(int j = 0; j < array[0].length; j++) {
                             textArea.append(array[i][j]);
                         }
                         textArea.append("\n");
