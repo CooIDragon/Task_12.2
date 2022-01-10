@@ -37,6 +37,8 @@ public class FrameMain extends JFrame {
                         textArea.append("\n");
                         ;
                     }
+                } else if (n < 1) {
+                textArea.append("Введите значение >= 1");
                 } else {
                     String[][] array = drawingTriangle.drawTriangle(drawingTriangle.drawFirstTriangle(), n);
                     for (int i = 0; i < array.length; i++) {
