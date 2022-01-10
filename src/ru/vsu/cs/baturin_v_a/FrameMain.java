@@ -35,7 +35,6 @@ public class FrameMain extends JFrame {
                             textArea.append(array1[i][j]);
                         }
                         textArea.append("\n");
-                        ;
                     }
                 } else if (n < 1) {
                 textArea.append("Введите значение >= 1");
@@ -45,8 +44,7 @@ public class FrameMain extends JFrame {
                         for (int j = 0; j < array[0].length; j++) {
                             textArea.append(array[i][j]);
                         }
-                        textArea.append("\n");
-                        ;
+                        textArea.append("\n");                        
                     }
                 }
             }
