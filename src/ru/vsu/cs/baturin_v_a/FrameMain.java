@@ -15,7 +15,6 @@ public class FrameMain extends JFrame {
         this.setTitle("Task_12");
         this.setContentPane(panelMain);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setSize(800, 800);
         this.setResizable(true);
         this.pack();
 
